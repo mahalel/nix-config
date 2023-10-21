@@ -27,6 +27,12 @@
 
     # misc
     flameshot
+    tidal-hifi
+    wev
+
+    # programming
+    powershell
+    python3
   ];
 
   # GitHub CLI tool

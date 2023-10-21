@@ -56,7 +56,7 @@
     };
 
     # monitor backlight control
-    light.enable = true;
+    light.enable = false;
 
     # thunar file manager(part of xfce) related options
     thunar.plugins = with pkgs.xfce; [
@@ -75,7 +75,8 @@
     wlogout # logout menu
     wl-clipboard # copying and pasting
     hyprpicker  # color picker
-
+    brightnessctl # backlight control
+    
     wf-recorder # screen recording
     grim # taking screenshots
     slurp # selecting a region to screenshot

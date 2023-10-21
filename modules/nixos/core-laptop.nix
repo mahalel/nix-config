@@ -15,7 +15,7 @@
     ./core-server.nix
   ];
 
-  # to install chrome, you need to enable unfree packages
+  # enable Unfree packages
   nixpkgs.config.allowUnfree = lib.mkForce true;
 
   # add user's shell into /etc/shells
@@ -25,6 +25,7 @@
   ];
   # set user's default shell system-wide
   users.defaultUserShell = pkgs.bash;
+  # users.defaultUserShell = pkgs.nushell;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
@@ -89,6 +90,7 @@
   # Bluetooth devices automatically connect with bluetoothctl as well:
   # [bluetooth] # trust [hex-address]
   hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
   services.blueman.enable = true;
 
   # security with polkit
