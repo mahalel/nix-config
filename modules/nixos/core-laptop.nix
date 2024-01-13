@@ -21,11 +21,9 @@
   # add user's shell into /etc/shells
   environment.shells = with pkgs; [
     bash
-    nushell
   ];
   # set user's default shell system-wide
   users.defaultUserShell = pkgs.bash;
-  # users.defaultUserShell = pkgs.nushell;
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget

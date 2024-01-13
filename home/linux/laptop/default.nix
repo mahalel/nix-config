@@ -19,6 +19,7 @@
     # instant messaging
     # telegram-desktop
     discord
+    lazygit
     # qq # https://github.com/NixOS/nixpkgs/tree/master/pkgs/applications/networking/instant-messengers/qq
 
     # remote desktop(rdp connect)
@@ -29,10 +30,13 @@
     flameshot
     tidal-hifi
     wev
+    whois
 
     # programming
     powershell
-    python3
+    # python3
+    nodejs_18
+    nodePackages.typescript-language-server
   ];
 
   # GitHub CLI tool

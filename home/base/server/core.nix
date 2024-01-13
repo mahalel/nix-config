@@ -44,6 +44,8 @@
     zstd
     caddy
     gnupg
+    jmtpfs
+    fd
 
     # nix related
     #

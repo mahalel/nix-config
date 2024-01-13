@@ -24,15 +24,21 @@
     # guile
 
     # python
-    # (python311.withPackages (ps:
-    #   with ps; [
-    #     ipython
-    #     pandas
-    #     requests
-    #     pyquery
-    #     pyyaml
-    #   ]))
+    (python311.withPackages (ps:
+      with ps; [
+        # ipython
+        python-lsp-server
+        # pandas
+        requests
+        # pyquery
+        # pyyaml
+      ]))
 
+    # go
+    go
+    gopls
+    delve
+  
     # db related
     dbeaver
     mycli
